@@ -4,31 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="https://kit.fontawesome.com/0d860f380f.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <section class="container">
     <div class="calculator">
+      <div class="top">
+        <span class="speaker"></span>
+      </div>
+      <div class="icons">
+        <i class="fa-solid fa-circle grey-icon"></i>
+        <i class="fa-solid fa-signal white-icon"></i>
+        <i class="fa-solid fa-wifi white-icon"></i>
+        <i class="fa-solid fa-battery-full white-icon"></i>
+      </div>
       <div class="screen">
         <p></p>
       </div>
       <div class="buttons-container">
-        <div class="calc-button">0</div>
-        <div class="calc-button">1</div>
-        <div class="calc-button">2</div>
-        <div class="calc-button">3</div>
-        <div class="calc-button">4</div>
-        <div class="calc-button">5</div>
-        <div class="calc-button">6</div>
-        <div class="calc-button">7</div>
-        <div class="calc-button">8</div>
-        <div class="calc-button">9</div>
-        <div class="calc-button">+</div>
-        <div class="calc-button">-</div>
-        <div class="calc-button">*</div>
-        <div class="calc-button">/</div>
-        <div class="calc-button">=</div>
-        <div class="calc-button">Clear</div>
+        <div class="group">          
+          <div class="calc-button other">Clear</div>
+          <div class="calc-button other">%</div>
+        </div>
+        <div class="group">          
+          <div class="calc-button number">7</div>
+          <div class="calc-button number">8</div>
+          <div class="calc-button number">9</div>
+          <div class="calc-button operation">*</div>
+        </div>
+        <div class="group">          
+          <div class="calc-button number">4</div>
+          <div class="calc-button number">5</div>
+          <div class="calc-button number">6</div>
+          <div class="calc-button operation">-</div>
+        </div>
+        <div class="group">          
+          <div class="calc-button number">1</div>
+          <div class="calc-button number">2</div>
+          <div class="calc-button number">3</div>
+          <div class="calc-button operation">+</div>
+        </div>
+        <div class="group">          
+          <div class="calc-button number">0</div>
+          <div class="calc-button number">.</div>
+          <div class="calc-button operation">/</div>
+          <div class="calc-button operation">=</div>
+        </div>
+      </div>
+      <div class="footer">
+        <span class="bottom-line"></span>
       </div>
     </div>
 

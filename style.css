@@ -1,54 +1,135 @@
 body{
   padding: 0;
   margin: 0;
-  overflow: hidden;
+  height: 100%;
 }
 .container{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 .calculator{
-  background: rgb(29, 185, 224);
-  width: 22rem;
-  height: 30rem;
-  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: black;
+  border: silver 4px solid;
+  width: 380px;
+  height: 700px;
+  border-radius: 50px;
+}
+.icons{
+  height: 10%;
+  display: flex;
+  justify-content: end;
+  padding-right: 2rem;
+  width: 80%;
+}
+.white-icon{
+  color: white;
+  margin-right: 6px;
+}
+.grey-icon{
+  color: rgb(34, 34, 34);
+  margin-right: 80px;
 }
 .screen{
-  width: 95%;
-  background-color: aliceblue;
-  height: 5rem;
-  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  height: 20%;
+  color: white;
 }
 .screen p{
   display: flex;
   justify-content: end;
   align-items: center;
+  font-size: 5rem;
   height: 100%;
-  font-size: xx-large;
-  padding-right: 1.5rem;
+  width: 80%;
 }
 .buttons-container{
+  width: 100%;
+  height: 50%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.group{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.footer{
+  width: 50%;
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.top{
+  width: 50%;
+  height: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.top .speaker{
+  height: 3px;
+  background: grey;
+  width: 15%;
+}
+.footer .bottom-line{
+  height: 6px;
+  background-color: white;
+  width: 100%;
 }
 .calc-button{
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 100px;
   padding: 1rem;
-  margin: 1rem;
-  width: 1rem;
-  height: 1rem;
-  background-color: white;
-  border: 1px solid black;
+  margin: 0.2rem;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(63, 63, 63);
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+.operation{
+  background-color: rgb(238, 135, 0);
+}
+.other{
+  background-color: rgb(193, 193, 193);
+  color: black;
 }
 .calc-button:hover{
   background-color: rgb(218, 218, 218);
   transition: ease-in 0.2s;
   cursor: pointer;
+}
+
+@media (min-width: 800px){
+  .calculator{
+    width: 800px;
+  }
+  .grey-icon{
+    display: none;
+  }
+  .calc-button{
+    border-radius: 100px;
+    margin: 0.4rem;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+  }
 }
